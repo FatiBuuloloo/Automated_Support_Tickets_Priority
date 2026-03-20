@@ -29,7 +29,7 @@ The project uses a two-stage classification approach:
 
 The system evaluated multiple algorithms (Random Forest, XGBoost, CatBoost, etc.), with **K-Nearest Neighbors (KNN)** showing robust performance on the high-dimensional embeddings.
 **Confusion Matrix Classifying Queue**
-![Confusion Matrix Classifying Queue](cm_queue_knn.png)
+![Confusion Matrix Classifying Queue](cm_queue-knn.png)
 
 **Confusion Matrix Classifying Priority**
 ![Confusion Matrix Classifying Priority](cm_priority_knn.png)
@@ -48,6 +48,7 @@ The system evaluated multiple algorithms (Random Forest, XGBoost, CatBoost, etc.
 | **Macro Avg F1-Score** | **86%** |
 | **Weighted Avg F1-Score** | **87%** |
 
+---
 
 ## 🧠 Intelligent Decision Logic (Simulation)
 
@@ -65,6 +66,7 @@ $$Final\ Score = (Weight_{Priority} \times f_{Priority}) + (Weight_{Sentiment} \
 > **Sentiment:** Negative (0.98)  
 > **Final Priority Score:** 0.85
 
+---
 
 ## 🚀 Tech Stack
 - **Language:** Python
