@@ -1,6 +1,6 @@
 # Automated Support Ticket Triage & Intelligent Priority Scoring
 
-## 📌 Project Overview
+## Project Overview
 Customer support teams often face thousands of daily tickets with varying degrees of urgency. This project implements an **automated triage system** that classifies incoming support tickets into specific departments (Queue) and determines their priority level. 
 
 The system goes beyond simple classification by calculating a **Final Priority Score** that combines predicted urgency with real-time sentiment analysis. This allows businesses to automatically route low-stakes tickets to AI Chatbots while prioritizing high-urgency, negative-sentiment cases for human intervention.
@@ -9,7 +9,7 @@ The system goes beyond simple classification by calculating a **Final Priority S
 
 ---
 
-## 🛠️ Technical Workflow
+## Technical Workflow
 
 ### 1. Data Preprocessing & Multilingual Support
 - **Translation:** Leveraged `deep-translator` to handle German-language tickets, converting them to English to standardize the input for the NLP pipeline.
@@ -25,7 +25,7 @@ The project uses a two-stage classification approach:
 
 ---
 
-## 📈 Model Performance (KNN Benchmark)
+## Model Performance (KNN Benchmark)
 
 The system evaluated multiple algorithms (Random Forest, XGBoost, CatBoost, etc.), with **K-Nearest Neighbors (KNN)** showing robust performance on the high-dimensional embeddings.
 **Confusion Matrix Classifying Queue**
@@ -50,7 +50,7 @@ The system evaluated multiple algorithms (Random Forest, XGBoost, CatBoost, etc.
 
 ---
 
-## 🧠 Intelligent Decision Logic (Simulation)
+## Intelligent Decision Logic (Simulation)
 
 The core value of this project lies in the **Final Priority Score** formula, which balances technical urgency and customer emotion:
 
@@ -68,17 +68,13 @@ $$Final\ Score = (Weight_{Priority} \times f_{Priority}) + (Weight_{Sentiment} \
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 - **Language:** Python
 - **NLP:** HuggingFace Transformers (RoBERTa), Sentence-Transformers (MPNet)
 - **Machine Learning:** Scikit-learn (KNN, Random Forest, MLP), XGBoost, CatBoost, LightGBM
 - **Translation:** Deep-translator, Langdetect
 - **Visualization:** Seaborn, Matplotlib
 
-## 📂 Project Structure
+## Project Structure
 - `translating_and_labeling.ipynb`: translation, and sentiment extraction.
 - `classifying_queue_and_priority.ipynb`: Feature embedding, model benchmarking, and the final decision simulation.
-
----
-
-*Developed by [Your Name] - Transforming Raw Support Data into Actionable Business Decisions.*
